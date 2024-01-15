@@ -13,7 +13,8 @@
 <body>
 <h1>Testing jsp</h1>
 <p>
-    <% java.util.Date now = new java.util.Date();
+    <%@ page import="java.util.Date" %>
+    <% Date now = new java.util.Date();
         String someString = "Текущая дата: " + now;
     %>
     <%=  someString %>

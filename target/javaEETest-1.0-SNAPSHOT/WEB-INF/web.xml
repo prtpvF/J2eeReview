@@ -11,4 +11,13 @@
         <servlet-name>TestServlet</servlet-name>
         <url-pattern>/hello-world</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>testJsp</servlet-name>
+        <jsp-file>/testJsp.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>testJsp</servlet-name>
+        <url-pattern>/hello-jsp</url-pattern>
+    </servlet-mapping>
 </web-app>
