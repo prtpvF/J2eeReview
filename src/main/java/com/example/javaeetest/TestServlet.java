@@ -7,6 +7,7 @@ import jakarta.servlet.http.*;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.net.http.HttpClient;
 
 
 public class TestServlet extends HttpServlet {
@@ -20,6 +21,10 @@ public class TestServlet extends HttpServlet {
         pw.println("<html>");
         pw.println("<h1>Hello," +  name+ " "+ surname+ "</h1>");
         pw.println("</html>");
+
+        //response.sendRedirect("/redAndForJsp.jsp"); //redirect
+        RequestDispatcher dispatcher  = request.getRequestDispatcher("/testJsp.jsp"); // forward
+        dispatcher.forward(request,response);
     }
 
     @Override

@@ -20,4 +20,13 @@
         <servlet-name>testJsp</servlet-name>
         <url-pattern>/hello-jsp</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>redAndForJsp</servlet-name>
+        <jsp-file>/redAndForJsp.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>redAndForJsp</servlet-name>
+        <url-pattern>/red-jsp</url-pattern>
+    </servlet-mapping>
 </web-app>
