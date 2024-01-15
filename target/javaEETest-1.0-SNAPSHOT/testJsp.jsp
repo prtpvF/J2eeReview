@@ -13,15 +13,10 @@
 <body>
 <h1>Testing jsp</h1>
 <p>
-    <%@ page import="java.util.Date" %>
-    <% Date now = new java.util.Date();
-        String someString = "Текущая дата: " + now;
-    %>
-    <%=  someString %>
+    <% String name=request.getParameter("name");
+        String surname = request.getParameter("surname");%>
 
-    <% for (int i = 0; i < 10; i++) {
-        out.println("<p>"+"что то: " + i +"</p>" );
-    } %>
+    <%="Hello," +  name+ " "+ surname %>
 </p>
 </body>
 </html>
